@@ -47,7 +47,7 @@ header h1, section h2{
     text-align: center;
     font-size: 10.0rem;
     color: #fff;
-    text-shadow: .8rem .8rem 0 #999, 1rem 1rem 0 #fafafa;
+    text-shadow: .8rem .8rem 0 #333333, 1.1rem 1.1rem 0 #fafafa;
 }
 section h2{
     text-align: left;
@@ -79,3 +79,4 @@ footer *{
 footer address ul{
     padding: 1rem;
 }
+/* responsive */
