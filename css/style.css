@@ -53,6 +53,7 @@ header h1, section h2{
 }
 header h1 .material-icons{
     display: none;
+    cursor: pointer;
 }
 section h2{
     top:0;
@@ -111,6 +112,7 @@ main,footer{
 section ul, section ul li p{
     line-height: 2.6rem;
     padding: 1rem;
+    text-align: justify;
 }
 
 footer{
