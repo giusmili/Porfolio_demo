@@ -5,7 +5,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font: 1.6rem "Roboto", sans-serif;
+    font: 1.6rem "Roboto",sans-serif;
     margin: 0;
 }
 p, ul, ol, h1, h2, h3, address{
@@ -36,13 +36,6 @@ a,abbr{
     background-color: #222;
     outline: .1rem solid #333;
 }
-
-:root{
-    --color-default-global: #222;
-    --color-primary: #3b5998;
-    --color-secondary: #8B9DC3;
-    --color-main: #DFE3EE;
-}
 :root{
     --color-default-global: #222;
     --color-primary: #3b5998;
@@ -58,27 +51,28 @@ header h1, section h2{
     font-weight: 300;
     text-shadow: .1rem .1rem 0 var(--color-default-global);
 }
+header h1 .material-icons{
+    display: none;
+}
 section h2{
     top:0;
     position:sticky;
 }
-
-/* menu */
 nav ul{
     max-width: 80rem;
-    margin: 0 auto 2rem;
-  
+    margin: 0 auto;
+    font-size: 0;
+    margin-bottom: 2rem;
 }
 nav ul li{
     display: inline-block;
     line-height: 4.5rem;
-    text-align: center;
+    font-size: 1.6rem;
     width: calc(100% / 5);
-    
+    text-align: center;
 }
 nav ul li a{
     display: block;
-    width: 100%;
     transition: all 500ms ease-in-out;
 }
 nav ul li:hover a{
@@ -118,13 +112,6 @@ section ul, section ul li p{
     line-height: 2.6rem;
     padding: 1rem;
 }
-.history{
-    transition: all 500ms ease-in-out;
-}
-.history:target{
-    background-color: #ccc;
-    color: #222;
-}
 
 footer{
     background: none;
@@ -139,5 +126,53 @@ footer ul li{
 footer address ul{
     padding: 1rem;
 }
-/* menu and target */
+.history{
+    transition-duration: 0.5s;
+}
+.history:target{
+    background-color: #ccc;
+    color: #222;
+}
 /* responsive */
+@media screen and (max-width: 80rem){
+    header h1{
+        font-size:2rem;
+        margin-bottom: 1%;
+    }
+    header h1 .material-icons{
+        display: inline-block;
+    }
+    section h2{
+        font-size: 2rem;
+    }
+    header h1 span{
+        vertical-align: middle;
+    }
+    nav ul{
+        width: auto;
+        margin: 0;
+        display: none;
+        margin-bottom: .1rem;
+    }
+    nav ul li{
+        display: block;
+        width: auto;
+        text-align: left;
+        
+    }
+    nav ul li a{
+        padding-left: 1rem;
+    }
+    .aside{
+        width: auto;
+        margin: 0 1%;
+    }
+    .aside h2{
+        text-shadow: none;
+        display: none;
+    }
+    main{
+        margin: 0 1%;
+    }
+
+}
