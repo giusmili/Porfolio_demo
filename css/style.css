@@ -136,10 +136,10 @@ footer address ul{
     color: #222;
 }
 /* responsive */
-@media screen and (max-width: 80rem){
+@media screen and (max-width: 90rem){
     header h1{
         font-size:2rem;
-        margin-bottom: 1%;
+        margin-bottom: .1rem;
     }
     header h1 .material-icons{
         display: inline-block;
@@ -150,24 +150,43 @@ footer address ul{
     header h1 span{
         vertical-align: middle;
     }
+    /* menu of */
+    nav{
+        position: relative;
+        z-index: -1;
+        height: 0;
+        margin-bottom: 1rem;
+        transition: all 500ms ease-in-out;
+        
+    }
+    /* menu on */
+    .open-menu{
+        z-index: 1;
+        height: 22.5rem;
+    }
+    
     nav ul{
         width: auto;
         margin: 0;
-        display: none;
-        margin-bottom: .1rem;
+        display: block;
+       
     }
     nav ul li{
-        display: block;
+        display: list-item;
         width: auto;
         text-align: left;
+       
         
     }
     nav ul li a{
         padding-left: 1rem;
     }
+    /* change index */
     .aside{
+        position: relative;
         width: auto;
         margin: 0 1%;
+        z-index: 2;
     }
     .aside h2{
         text-shadow: none;
@@ -177,4 +196,15 @@ footer address ul{
         margin: 0 1%;
     }
 
+}
+
+@media screen and (orientation: landscape){
+    nav ul{
+        margin: 0 auto 2rem;
+       
+    }
+    nav ul li{
+        width: calc(100% / 5);
+    }
+    
 }
