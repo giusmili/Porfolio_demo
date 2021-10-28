@@ -1,50 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio - développeur front...">
-    <title>Portfolio - développeur front and js</title>
-   
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./asset/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon-16x16.png">
-    <link rel="manifest" href="./asset/site.webmanifest">
-    <link rel="stylesheet" href="./css/style.css">
-    
-</head>
-<body>
-    <header aria-labelledby="main-title">
-        <h1 id="main-title">
-            <span class="material-icons" aria-hidden="true">
-                table_rows
-            </span>&nbsp;Portfolio - développeur front</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#formation">Formation</a></li><!--white space
-
-            --><li><a href="#competences">Compétences</a></li><!--
-            --><li><a href="#web">Web</a></li><!--
-            --><li><a href="#experience">Expériences</a></li><!--
-            --><li><a href="#profil">Profil</a></li>
-        </ul>
-    </nav>
-    
-    <!--navigation-->
-
-    <div class="aside" id="aside" role="complementary" aria-labelledby="title">
-        <h2 id="title">Présentation</h2>
-    </div>
-
-    <main>
+<main itemscope itemtype="https://schema.org/WebPage">
         <section>
             <h2 id="formation" class="history"><span class="material-icons" aria-hidden="true">
                 edit
                 </span> Formation</h2>
-            <ul>
+            <ul itemprop="breadcrumb">
                 <li><time datetime="2003-01-19">2003</time> - Maîtrise en base de données avancées et programmation orientée objet
                     Développement informatique et systèmes d’informations : CNAM de Paris SBDR</li>
                 <li><time datetime="2003-02-02">2003</time> - Maîtrise en base de données avancées et programmation orientée objet</li>
@@ -54,17 +13,13 @@
         </section>
         <!--section compétences-->
         <section>
-            <h2 id="competences" class="history"><span class="material-icons" aria-hidden="true">
+            <h2 id="competence" class="history"><span class="material-icons" aria-hidden="true">
                 edit
                 </span>&nbsp;Compétences &amp; langages</h2>
-            <ul class="grid-logo">
-                <li><img src="./asset/file_type_html_icon_130541.png" alt="logo html"></li>
-                <li><img src="./asset/css_original_wordmark_logo_icon_146576.png" alt="logo css"></li>
-                <li><img src="./asset/file_type_js_official_icon_130509.png" alt="logo js"></li>
-                <li><img src="./asset/php-programmation-file-black-interface-symbol_icon-icons.com_57653.png" alt="logo php"></li>
-               
-                
-            </ul>
+          <!--liste --> 
+            <?php
+                include_once "./pages/list_image.inc.php";
+            ?>
         </section>
         <section>
             <h2 id="web" class="history"><span class="material-icons" aria-hidden="true">
@@ -115,22 +70,4 @@
                 <li>Astronomie</li>
             </ul>
         </section>
-        
     </main>
-    <!--footer-->
-    <footer  id="profil">
-        <address>
-            <ul>
-                <li>Giuseppe Militello 2bis bd de l’est 75000 Paris</li>
-                <li>port : 06 82 24 33 11</li>
-                <li>N° de siret : 422 600 635 000 28</li>
-                <li>giusmili67@gmail.com</li>
-                <li>&copy; - MIT - </li>
-            </ul>
-        </address>
-
-    </footer>
-    <script src="./js/app.js"></script>
-</body>
-
-</html>

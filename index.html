@@ -50,12 +50,12 @@
         <section>
             <h2 id="competence" class="history"><span class="material-icons" aria-hidden="true">
                 edit
-                </span>&nbsp;Compétences</h2>
-            <ul>
-                <li><abbr title="HyperTextMarkupLanguage">HTML</abbr><sup>5</sup> / CSS<sub>3</sub></li>
-                <li>ECMAscript : 5,6,7,8</li>
-                <li>Css3</li>
-                <li>PHP 7.5 &amp; SQL</li>
+                </span>&nbsp;Compétences &amp; langages</h2>
+            <ul class="grid-logo">
+                <li><img src="./asset/file_type_html_icon_130541.png" alt="logo html 5"></li>
+                <li><img src="./asset/php-programmation-file-black-interface-symbol_icon-icons.com_57653.png" alt="logo php"></li>
+                <li><img src="./asset/css_original_wordmark_logo_icon_146576.png" alt="logo css"></li>
+                <li><img src="./asset/sql-document_icon-icons.com_57634.png" alt="logo sql"></li>
                
                 
             </ul>
@@ -112,17 +112,18 @@
     </main>
     <!--footer-->
     <footer  id="profil">
-        <address>
+        <address itemscope itemtype="https://schema.org/PostalAddress" itemref="link"><!--vocabulaire schema.org-->
             <ul>
-                <li>Giuseppe Militello 2bis bd de l’est 75000 Paris</li>
-                <li>port : 06 82 24 33 11</li>
-                <li>N° de siret : 422 600 635 000 28</li>
-                <li>giusmili67@gmail.com</li>
-                <li>&copy; - 2021 - Militello</li>
+                <li itemprop="streetAddress">Giuseppe Militello 2bis bd de l’est 75000 Paris</li>
+                <li itemprop="telephone">port : 06 82 24 33 11</li>
+                <li itemprop="number">N° de siret : 422 600 635 000 28</li>
+                <li itemprop="email">giusmili67@gmail.com</li>
+                <li itemprop="contactType">&copy; - 2021 - Militello</li>
             </ul>
         </address>
-
+        <p id="link" intemprop="name">@militello</p>
     </footer>
     <script src="./js/app.js"></script>
+    
 </body>
 </html>

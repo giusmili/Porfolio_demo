@@ -80,6 +80,48 @@ nav ul li:hover a{
     background-color: var(--color-primary);
     color: #fff;
 }
+section .grid-logo{
+    width: auto;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(4, 1fr); /* valeurs auto 4 fois */
+    grid-gap: 1.0rem;
+    grid-auto-flow: dense;
+   
+}
+/* test grid display block */
+
+/*section:nth-of-type(2) ul{
+    overflow: hidden;
+   display: table;
+    width: 100%;
+    font-size: 0;
+    
+}
+/*section:nth-of-type(2) ul li{
+    
+    display: inline-block;
+    float: left;
+    width: calc(100% / 4);
+    
+}*/
+section:nth-of-type(2) ul li img{
+    position: relative;
+    display: block;
+    width: 100%;
+    transition-duration: .6s;
+    transform: scale(1);
+}
+section:nth-of-type(2) ul li:hover img{
+    transform: scale(1.5);
+    z-index: 3;
+}
+
+/* end */
+section .grid-logo li img{
+    display: block;
+    width: 100%;
+}
 
 .aside{
     background: url(https://blog.lesjeudis.com/wp-content/uploads/2018/06/d%C3%A9veloppeur-informatique_552022249-1600x900.jpg)no-repeat scroll center center / cover;

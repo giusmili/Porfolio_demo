@@ -5,4 +5,10 @@ document.addEventListener("DOMContentLoaded",()=>{
     btn.addEventListener("click",()=>{
         el.classList.toggle("open-menu")
     })
+    const userDate = {
+        datecopy: new Date(),
+        lastelement: document.querySelector("footer > address > ul > li:last-child"),
+      
+    }
+    userDate.lastelement.innerText += ` ${userDate.datecopy.getFullYear()}`;
 })
